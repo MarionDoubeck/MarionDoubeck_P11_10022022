@@ -1,0 +1,55 @@
+.aPropos{
+  .aPropos-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: center;
+    img{
+      width: 100%;
+      border-radius: 25px;
+      filter: brightness(70%);
+      @media screen and (max-width : 850px){
+        aspect-ratio: 335/223;
+        object-fit: cover;
+      }
+    }
+    .fiability, .respect, .service, .responsability{
+      margin-top: 31px;
+      width: 80%;
+      background-color: #f6f6f6;
+      border-radius: 10px;
+      height: min-content;
+      .top{
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.15em;
+        padding: 3px 20px;
+        text-align: center;
+        color: white;
+        background-color: $color-1;
+        border-radius: 10px;
+        position: relative;
+        .fa-solid{
+          position: absolute;
+          right:10px;
+          top: 5px;
+          cursor: pointer;
+        }
+        .opened{
+          transform: rotate(180deg);
+          transition: transform 500ms;
+        }
+        .closed{
+          transform-origin: center;
+          transform: rotate(0deg);
+          transition: transform 500ms;
+        }
+      }
+      .fiabilityContent, .respectContent, .serviceContent, .responsabilityContent{
+        padding: 30px 12px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+}

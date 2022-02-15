@@ -1,0 +1,22 @@
+.footer{
+  position: fixed;
+  bottom: 0;
+  //transform: translate(-100px, -40px);
+  width: 100vw;
+  background-color: black;
+  color : white;
+  text-align: center;
+  padding-top: 18px ;
+  padding-bottom: 10px;
+  z-index: 5;
+  img{
+    height: 28px;
+  }
+  p{
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  @media screen and (max-width : 850px){
+    //transform: translate(-20px, -20px);
+  }
+}

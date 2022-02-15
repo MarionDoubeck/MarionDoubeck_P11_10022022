@@ -1,0 +1,17 @@
+.navigation{
+  transform: translateY(10px);
+  .navItem{
+    margin-left: 30px;
+  }
+  .active{
+    text-decoration: underline;
+  }
+  @media screen and (max-width : 850px){
+    display: flex;
+    flex-wrap: nowrap;
+    .navItem{
+      margin-left: 10px;
+      font-size: 150%;
+    }
+  }
+}

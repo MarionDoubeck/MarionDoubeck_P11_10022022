@@ -1,0 +1,39 @@
+.home{
+  .home-content{
+    .intro{
+      width: 100%;
+      border-radius: 10px; 
+      position: relative;
+      img{
+        width: 100%;
+        @media screen and (max-width : 850px){
+          aspect-ratio: 3/1;
+        }
+      }
+      p{
+        width: 100%;
+        color: white;
+        font-weight: 500;
+        font-size: 48px;
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        text-align: center;
+        @media screen and (max-width : 850px){
+          font-size: 2em;
+          width: 80%;
+          text-align: left;
+        }
+      }
+    }
+    #background{
+      border-radius: 25px;
+      filter: brightness(70%);
+    }
+    .gallery{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
